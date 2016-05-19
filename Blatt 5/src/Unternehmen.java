@@ -19,12 +19,13 @@ public class Unternehmen {
 		this.firmenstandort = firenstandort;
 	}
 
-	public double getKapital() {
-		int gehälter = 0;
+	public double getKapital() {//Ist es notwendig, die Zuschläge der Azubis
+		//einzurechnen? bzw deren Gehalt anzupassen
+		int gehaelter = 0;
 		for (int i = 0; i < mitarbeiter.length; i++) {
-			gehälter += mitarbeiter[i].getGehalt();
+			gehaelter += mitarbeiter[i].getGehalt();
 		}
-		return Kapital - gehälter;
+		return Kapital - gehaelter;
 	}
 
 	public void setMitarbeiter(Mitarbeiter[] mitarbeiter) {
@@ -59,7 +60,7 @@ public class Unternehmen {
 		Pizzaservice.setFirenstandort("Emden");
 		Pizzaservice.setFirmenname("Thorsten's Pizzas");
 
-		// Mitarbeiter
+		// Mitarbeiter kann ich auch mit Ausbildern(Zuschlag?!)Testen? ist das notwendig?
 		Mitarbeiter m1 = new Mitarbeiter(1, "Arno", "H", "Emden", 800);
 		Mitarbeiter m2 = new Mitarbeiter(2, "Holger", "B", "Emden", 1200);
 		Mitarbeiter[] Sklaven = new Mitarbeiter[] { m1, m2 };

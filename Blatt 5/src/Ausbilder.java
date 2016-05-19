@@ -18,7 +18,7 @@ public void setGehaltszuschlag(int _zuschlag){
 	Zuschlag=_zuschlag;
 }
 @Override
-public int getGehalt(){
+public int getGehalt(){//soll das so???????????????ßßß
 	return super.getGehalt()+Zuschlag;
 }
 //Azubi-schizzel
