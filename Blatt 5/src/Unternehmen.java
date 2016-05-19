@@ -21,6 +21,7 @@ public class Unternehmen {
 
 	public double getKapital() {//Ist es notwendig, die Zuschläge der Azubis
 		//einzurechnen? bzw deren Gehalt anzupassen
+		//Was sollen die random gesetzten () in den Aufgabetabellen?
 		int gehaelter = 0;
 		for (int i = 0; i < mitarbeiter.length; i++) {
 			gehaelter += mitarbeiter[i].getGehalt();
