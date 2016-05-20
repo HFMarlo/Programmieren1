@@ -30,12 +30,12 @@ public Azubi[] getAzubidaten(){
 }
 @Override
 public String mitarbeiterToString(){
-return(getVorname()+" "+getName()+":\t "+getWohnort()+", "+getGehalt()+
-		"€ bei einem Zuschlag von "+ Zuschlag+ "€.\n" + Karrierestatus+ " in Abteilung Nummer "+getAbteilung()+".");	
+return(getVorname()+" "+getName()+":\t "+getWohnort()+", "+getGehalt()+" ("+ super.getGehalt()+
+		"€ plus einem Zuschlag von "+ Zuschlag+ "€.)" + Karrierestatus+ " in Abteilung Nummer "+getAbteilung()+".");	
 }
 public static void main(String[] args) {
 		
-	Ausbilder m = new Ausbilder(1,"Hans","Mustermann","Jena",5000,"Instructor",500);
+	Ausbilder m = new Ausbilder(1,"Hans","Mustermann","Jena",4000,"Instructor",500);
 
 	System.out.println(m.mitarbeiterToString()); 
 	System.out.println(m.getGehalt());
