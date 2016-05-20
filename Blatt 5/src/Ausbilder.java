@@ -18,7 +18,7 @@ public void setGehaltszuschlag(int _zuschlag){
 	Zuschlag=_zuschlag;
 }
 @Override
-public int getGehalt(){//soll das so???????????????ßßß
+public int getGehalt(){//soll das so????
 	return super.getGehalt()+Zuschlag;
 }
 //Azubi-schizzel
@@ -38,6 +38,8 @@ public static void main(String[] args) {
 	Ausbilder m = new Ausbilder(1,"Hans","Mustermann","Jena",5000,"Instructor",500);
 
 	System.out.println(m.mitarbeiterToString()); 
+	System.out.println(m.getGehalt());
+	System.out.println(m.getGehalt());
 	}
 
 	

@@ -1,13 +1,6 @@
 
 public class Mitarbeiter {
-	// Konstruktor
-	public Mitarbeiter(int _abteilung, String _vorname, String _nachname, String _wohnort, int _gehalt) {
-Name=_nachname;
-Vorname=_vorname;
-Abteilung= _abteilung;
-Wohnort=_wohnort;
-Gehalt=_gehalt;
-	}
+	
 
 	// Variablen
 	private String Name;
@@ -15,6 +8,15 @@ Gehalt=_gehalt;
 	private String Wohnort;
 	private int Abteilung;
 	private int Gehalt;
+	
+	// Konstruktor
+		public Mitarbeiter(int _abteilung, String _vorname, String _nachname, String _wohnort, int _gehalt) {
+	Name=_nachname;
+	Vorname=_vorname;
+	Abteilung= _abteilung;
+	Wohnort=_wohnort;
+	Gehalt=_gehalt;
+		}
 
 	// getter
 	public String getName() {
@@ -61,7 +63,9 @@ Gehalt=_gehalt;
 	System.out.println(m1.mitarbeiterToString());
 	m1.generiereAbteilung();//System.out.println("Abteilung: "+m1.getAbteilung());
 	Mitarbeiter m2= new Mitarbeiter(2, "Holger", "B", "Emden", 2500);
-	System.out.println(m2.mitarbeiterToString());}
-
+	System.out.println(m2.mitarbeiterToString());
+	m2.generiereAbteilung();
+	}
+	
 }
 
